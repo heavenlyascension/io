@@ -5,6 +5,7 @@ body {
 h1 {
 	font-family: Arial;
 	text-align: center;
+	font-size: 50px;
 }
 
 h2 {
@@ -12,18 +13,19 @@ h2 {
 }
 
 p {
-	font-family: Georgia, serif;
-}
-
-article {
-
+	font-family: Georgia, Times New Roman, sans-serif;
+	font-size: 13px;
 }
 
 #paragraph2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	line-height: 2;
 	border: 4px solid green;
-	padding: 10px;
+	padding: 20px;
 	background-color: white;
-	max-width: 500px;
+	max-width: 700px;
 }
 
 .blue {
@@ -34,14 +36,26 @@ article {
 
 ol {
     list-style-type: decimal-leading-zero;
+    font-size: 12px;
+	color: black;
 }
+
+ol li::marker {
+    font-size: 16px;
+}
+
+ol li a {
+    color: darkblue;
+}
+
+
 
 a[href="http://www.w3schools.com"] {
     color: red;
 }
 
 table {
-	max-width: 600px;
+	max-width: 700px;
 	border-collapse: collapse;
 }
 
@@ -57,5 +71,4 @@ th {
 td {
 	background-color: white;
 }
-
 
