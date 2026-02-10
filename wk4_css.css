@@ -297,6 +297,16 @@ footer {
     header {
         padding: 8px 12px;
     }
+
+    main.container {
+        margin: 130px auto 20px;
+        padding: 0 12px;
+    }
+
+	.abt-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
 	
 	.myName {
 		font-size: 20px;
@@ -329,4 +339,5 @@ footer {
 @media (min-width: 1440px) {
     header {
         padding: 16px 40px;
+
     }
