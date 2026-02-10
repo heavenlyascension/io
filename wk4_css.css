@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    background-color: gray;
+    color: darkslategray;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+p:not(footer p) {
+	color: dimgray;
+	font-size: 16px;
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: gray;
+    padding: 10px 15px;
+}
+.navBar {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+	border: 3px solid dimgray;
+    border-radius: 18px;
+}
+.name {
+    display: flex;
+    align-items: center;
+}
+.myName {
+	font-style: italic;
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+.nav-links a {
+    font-size: 16px;
+    color: dimgray;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 2s;
+    position: relative;
+}
+.nav-links a:hover {
+	color: black;
+}
+
+
+main.container {
+    max-width: 750px;
+    margin: 110px auto 15px;
+    padding: 0 25px;
+}
+
+.content-section {
+    background-color: white;
+	border: 3px solid dimgray;
+    border-radius: 16px;
+    padding: 30px 55px;
+    display: none;
+	margin-top: 20px;
+}
+
+.content-section.active,
+.content-section:target {
+    display: block;
+}
+
+#abt {
+    display: block;
+}
+
+#exp:target ~ #abt,
+#pjs:target ~ #abt,
+#pjs:target ~ #exp {
+    display: none;
+}
+
+.abt-section {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 35px;
+    margin-bottom: 0px;
+	align-items: center;
+}
+.abt-image {
+    width: 110%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.abt-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.75);
+}
+.abt-content h1 {
+	text-align: center;
+	font-style: italic;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 16px;
+}
+.obj {
+    font-size: 16px;
+    line-height: 1.8;
+    color: dimgray;
+    margin-bottom: 32px;
+	padding: 0 15px;
+}
+
+.contact-info {
+    margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: black;
+}
+.contact-info a {
+	color: gray;
+    transition: color 1s;
+}
+.contact-info a:hover{
+	color: black;
+}
+.contact-info a:visited{
+	color: maroon;
+	font-style: italic;
+}
+
+.skills-section h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+	margin-top: 20px;
+}
+.skills h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: black;
+}
+
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+.education-block {
+    margin-bottom: 30px;
+}
+.education-block h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+}
+.degree {
+    font-size: 16px;
+    color: dimgray;
+    font-style: italic;
+}
+
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.experience-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 4px;
+}
+.time-period {
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.experience-item p:not(.time-period) {
+    font-size: 16px;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+.coursework-list ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.coursework-list li {
+    padding: 4px 0;
+    color: dimgray;
+    font-size: 16px;
+}
+
+
+.pj-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    margin-bottom: 32px;
+    align-items: center;
+}
+.pj-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+	margin-bottom: 18px;
+}
+.pj-image img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.pj-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 12px;
+}
+.pj-text a {
+	color: gray;
+    transition: color 1s;
+}
+.pj-text a:hover {
+	color: black;
+}
+.pj-text a:visited {
+	color: maroon;
+	font-style: italic;
+}
+
+.cert-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+}
+.cert-item p {
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 20px;
+    color: white;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 8px 12px;
+    }
+	
+	.myName {
+		font-size: 20px;
+	}
+		
+	h1 {
+		font-size: 16px;
+	}
+	
+	h2 {
+		font-size: 15px;
+	}
+	
+	h3 {
+		font-size: 14px;
+	}
+	
+	h4 {
+		font-size: 13px;
+	}
+	
+	.obj {
+		font-size: 12px;
+	}
+	
+	p {
+		font-size: 12px;
+	}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 16px 40px;
+    }
